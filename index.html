@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffb3c9">
+<title>Gozal uchun ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,700&family=Caveat:wght@500;700&family=Great+Vibes&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<div id="hearts" aria-hidden="true"></div>
+
+<!-- Boshlang'ich animatsiya -->
+<section id="intro">
+  <p class="intro-small">yurak tubidan yozilgan sahifa</p>
+  <h1 class="intro-title"><span>Gozal</span> <span>uchun</span> <span>maxsus</span></h1>
+  <div class="intro-heart"></div>
+  <button id="openBtn" type="button">Ochish</button>
+</section>
+
+<main id="site">
+
+  <!-- Hero -->
+  <header class="hero">
+    <p class="hero-small">Eng go'zal insonga</p>
+    <h2 class="hero-name">Gozal</h2>
+    <p class="hero-text">Ismingga mos go'zal yagona qiz. Bu sahifa faqat senga atalgan, yuragimdagi eng samimiy gaplar bilan.</p>
+    <p class="scroll-hint">pastga sur ↓</p>
+  </header>
+
+  <!-- Maktub -->
+  <section class="block" id="letterSec">
+    <h3>Senga maktub</h3>
+    <button id="envelope" class="envelope" type="button" aria-expanded="false">
+      <span class="env-flap"></span>
+      <span class="env-heart">♡</span>
+      <span class="env-label">Ochish uchun bos</span>
+    </button>
+    <article id="letter" class="letter">
+      <p class="dear">Aziz Gozal,</p>
+      <p>Bu so'zlarni senga yuzma-yuz aytishga ko'p urindim. Lekin yoningda yuragim shunchalik shoshilib ketadiki, tilim lol bo'lib qoladi. Shuning uchun ularni shu yerga, qalbimning tub-tubidan yozdim.</p>
+      <p>Sen kulganingda dunyo yumshoqroq, kunlar yorug'roq bo'lib ketadi. Ovozingni eshitsam, butun charchoqlarim bir zumda yo'qoladi.</p>
+      <p>Men senga ko'p chiroyli va'dalar bera olmayman. Lekin bir narsani halol aytaman: seni taniganimdan beri yuragimda boshqa hech kim yo'q.</p>
+      <p>Sen mening eng sevimli xayolim, eng yoqimli o'ylarimsan. Bilib qo'y, sen men uchun juda-juda qadrlisan.</p>
+      <p class="sign">Sevgi bilan,<br>seni yaxshi ko'radigan inson ♡</p>
+    </article>
+  </section>
+
+  <!-- Sabablar -->
+  <section class="block">
+    <h3>Seni sevishimning sabablari</h3>
+    <p class="sub">Kartochkalarni bosib ko'r</p>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <!-- Orzular -->
+  <section class="block">
+    <h3>Sen bilan orzularim</h3>
+    <ul class="dreams">
+      <li>Kechqurun shahar chiroqlari ostida sen bilan sekin yurish</li>
+      <li>Yomg'irda bitta soyabon tagida kulishib turish</li>
+      <li>Xaritadagi eng go'zal joylarni birga kashf qilish</li>
+      <li>Har ertalab sening tabassuming bilan uyg'onish</li>
+      <li>Qo'lingni hech qachon qo'yib yubormaslik</li>
+    </ul>
+  </section>
+
+  <!-- Yulduzlar -->
+  <section class="block sky">
+    <h3>Senga yulduzlar</h3>
+    <p class="sub">Bittasini tanla</p>
+    <div class="stars" id="stars"></div>
+    <p class="star-msg" id="starMsg">Yulduzni bos ✦</p>
+  </section>
+
+  <!-- Sevgi o'lchagichi -->
+  <section class="block">
+    <h3>Seni qanchalik yaxshi ko'raman?</h3>
+    <p class="meter-val" id="meterVal">0%</p>
+    <input type="range" id="meter" min="0" max="100" value="0" aria-label="Sevgi o'lchagichi">
+    <p class="sub" id="meterMsg">Surib ko'r</p>
+  </section>
+
+  <!-- Savol -->
+  <section class="block ask" id="ask">
+    <p class="ask-small">Va eng muhim gap...</p>
+    <h3 class="ask-title">Gozal, men seni yaxshi ko'raman.</h3>
+    <p class="ask-q">Sen ham meni yaxshi ko'rasanmi?</p>
+    <div class="btn-row">
+      <button id="yesBtn" type="button">Ha, men ham ♡</button>
+      <button id="noBtn" type="button">Yo'q</button>
+    </div>
+  </section>
+
+  <!-- Yakun -->
+  <section class="block final" id="final" hidden>
+    <div class="final-heart"></div>
+    <p class="final-big">Rahmat, Gozal</p>
+    <p class="final-text">Bu so'zlarni eshitish men uchun dunyodagi eng go'zal sovg'a. Endi har bir kunim sen bilan ma'noli. Seni juda yaxshi ko'raman.</p>
+    <p class="final-sign">Sening insoning</p>
+  </section>
+
+  <footer class="foot">Gozal uchun, butun yurakdan ♡</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
